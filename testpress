@@ -1,0 +1,98 @@
+// question 1 Write a program to print the reverse of the given string.
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+let str=prompt(`enter lower case words to reverse:`);
+let text=" ";
+for(let i=str.length-1;i>=0;i--)
+{
+ text += str[i];
+}
+console.log(text);
+ </script>
+</body>
+</html>
+
+
+//question 2 Given a number, check whether it is a prime number or not.
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+  let i,m=0,flag=0;      
+  let n=parseInt(prompt(`enter the number:`));//it is the number to be checked    
+  m=n/2;      
+  if(n==0||n==1){  
+   console.log(n+" is not prime number");      
+  }else{  
+   for(i=2;i<=m;i++){      
+    if(n%i==0){      
+     console.log(n+" is not prime number");      
+     flag=1;      
+     break;      
+    }      
+   }      
+   if(flag==0)  {console.log(n+" is prime number"); }  
+  }
+ </script>
+</body>
+</html>
+
+
+//question 3 Given a number, check whether it is a prime number or not.
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+  let arr=[54,546,548,60];
+  let longest1=" ";
+  for(let i=arr.length-1;i>=0;i--){
+      longest1 += arr[i];
+  }
+  console.log(longest1);
+ </script>
+</body>
+</html>
+
+//question 4 Given a number N, print reverse of number N.
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+let num=prompt(`enter the number:`);
+let reverse="";
+for(let i=num.length-1;i>=0;i--){
+    reverse += num[i];
+}
+let a=parseInt(reverse);
+console.log(a);
+ </script>
+</body>
+</html>
+
+
+//question 5 Given an array of numbers, find the maximum and minimum element in the array.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let num=[54,546,548,60];
+         let c=num.sort(function(a, b){return b-a});;
+         console.log(c[0]);
+         console.log(c[num.length-1]);
+    </script>
+   
+</body>
+</html>
